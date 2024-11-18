@@ -1,0 +1,67 @@
+.content{
+   justify-content: center;
+   margin-top: 80px;
+   margin-left: 150px;
+
+}
+
+.word{
+    font-weight: 600;
+    margin-left: 55px;
+    font-size: larger;
+    margin-bottom: 10px;
+}
+
+.words{
+    font-weight: 600;
+    margin-left: 150px;
+    margin-bottom: 80px;
+    font-size: larger;
+}
+
+.header{
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.table{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.green{
+    background-color: #008060;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid #008060;
+    height: 33px;
+
+}
+
+.button{
+    margin-left: 240px;
+    border: 2px solid #008060;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    color: #008060;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.edit{
+    padding-top: 5px;
+    gap: 2px;
+    padding-bottom: 5px;
+}
+
+.one{
+    padding-left: 70px;
+    /* padding-top: 2px; */
+}
