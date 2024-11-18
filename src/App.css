@@ -141,7 +141,7 @@
 
 
 
-
+/* 
 
 
 
@@ -184,3 +184,32 @@
   line-height: 16px;
   color: rgba(0, 0, 0, 0.9);
 }
+
+.products-four{
+  width: 215px;
+  height: 32px;
+  margin-top: 204px;
+  margin-left: 344px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  font-family: SF Pro Text;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.products-five{
+  width: 98px;
+  height: 21px;
+  margin-top: 150px;
+  margin-left: 354px;
+  font-family: SF Pro Text;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.img-one{
+
+} */
