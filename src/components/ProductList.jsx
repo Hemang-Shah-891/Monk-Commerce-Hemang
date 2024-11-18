@@ -51,7 +51,7 @@ const ProductList = () => {
     <div className={styles.content}>
 
      <div className={styles.header}>
-      Add Products
+      Add Products List
     </div>
     
     <div className={styles.table}>
