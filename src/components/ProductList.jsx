@@ -98,7 +98,7 @@ const ProductList = () => {
           contentLabel="Example Modal"
         > 
          <div className='MOdal-Heading'>
-           <h3>Select Products</h3>
+           <div className='selection'>Select Products</div>
           <button onClick={closeModal}>&times;</button>
           </div>
 

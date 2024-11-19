@@ -151,28 +151,30 @@ const AllProductsModal = ({submitSelected, closeModal}) => {
                 scrollableTarget="scrollableWrapper"
                 >
                 {list && list.map((group) => (
-                        <div key={group.id} style={{borderBottom: '1px solid grey', paddingTop: "10px", paddingBottom: "10px"  }}>
-                        <label>
+                        <div key={group.id} className='parent-list'>
+                        <div className='title'>
                             <input
                             ref={(el) => (parentRefs.current[group.id] = el)} // Attach ref to parent checkbox
                             type="checkbox"
                             checked={group.checked}
                             onChange={() => handleParentChange(group.id)}
                             />
-                            <span>{group.title}</span>
-                        </label>
-                        <div style={{ marginLeft: '20px' }}>
+                            <span className='group'>{group.title}</span>
+                        </div>
+                        <div >
                             {group.variants.map((child) => (
-                            <label key={child.id} style={{ display: 'block' }}>
+                            <div className='variants'>
+                            <label key={child.id} style={{ display: 'block'}}>
                                 <input
                                 type="checkbox"
                                 checked={child.checked}
                                 onChange={() => handleChildChange(group.id, child.id)}
                                 />
-                                <span>{child.title}</span>
-                            
+                                <span className='child-title'>{child.title}</span>
+                                <span className='qty'>{child.inventory_quantity}</span>
                                 <span className='child-price'>{child.price}</span>
                             </label>
+                            </div>
                             ))}
                         </div>
                         </div>
@@ -180,13 +182,18 @@ const AllProductsModal = ({submitSelected, closeModal}) => {
                     }
                 </InfiniteScroll>
             </div>
-            <div className='modal-actions'>
+            {/* <div className='modal-actions'> */}
                 <span>1 product selected</span>
                 <button className='btn-one'>Cancel</button>
                 <button className='btn-two' onClick={() => submitSelected(selectedProducts)}>Add</button>
-            </div>
+            {/* </div> */}
         </div>
     )
 }
 
 export default AllProductsModal;
+
+
+
+
+// style={{borderBottom: '1px solid grey', paddingTop: "10px", paddingBottom: "10px"  }}
