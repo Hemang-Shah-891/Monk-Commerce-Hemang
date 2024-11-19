@@ -161,6 +161,7 @@
 .child-price{
   float: right;
   margin-right: 30px;
+  margin-left: 10px;
 }
 
 
@@ -197,9 +198,7 @@
 
 
 
-.btn-one{
-  /* margin-left: 5px; */
-}
+/* */
 
 .btn-two{
   margin-left: 5px;

@@ -171,8 +171,9 @@ const AllProductsModal = ({submitSelected, closeModal}) => {
                                 onChange={() => handleChildChange(group.id, child.id)}
                                 />
                                 <span className='child-title'>{child.title}</span>
-                                <span className='qty'>{child.inventory_quantity}</span>
-                                <span className='child-price'>{child.price}</span>
+                                <span className='child-price'>${child.price}</span>
+                                <span className='qty'>{child.inventory_quantity} available</span>
+                                
                             </label>
                             </div>
                             ))}
