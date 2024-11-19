@@ -170,7 +170,8 @@ const AllProductsModal = ({submitSelected, closeModal}) => {
                                 onChange={() => handleChildChange(group.id, child.id)}
                                 />
                                 <span>{child.title}</span>
-                                <span>----- {child.price}</span>
+                            
+                                <span className='child-price'>{child.price}</span>
                             </label>
                             ))}
                         </div>
@@ -180,7 +181,9 @@ const AllProductsModal = ({submitSelected, closeModal}) => {
                 </InfiniteScroll>
             </div>
             <div className='modal-actions'>
-                <button onClick={() => submitSelected(selectedProducts)}>Add product</button>
+                <span>1 product selected</span>
+                <button className='btn-one'>Cancel</button>
+                <button className='btn-two' onClick={() => submitSelected(selectedProducts)}>Add</button>
             </div>
         </div>
     )
