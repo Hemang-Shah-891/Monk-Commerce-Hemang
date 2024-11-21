@@ -67,13 +67,12 @@ const ProductList = () => {
             {selected.map((item, index) => {
                 return (
                   <>
-                    <div key={index} className='flex'>
-                        <div className='border'>
-                            <span className='select-product'>{item.title ? item.title : 'Select Product'}
-                              <span onClick={openModal}><img  className='img' src={EditIcon}></img></span>
-                            </span>
+                    <div key={index} className='flex list-box'>
+                        <div className='border select-product flex'>
+                          <span>{item.title ? item.title : 'Select Product'}</span>
+                            <span onClick={openModal}><img  className='img' src={EditIcon}></img></span>
                         </div>
-                        <div>
+                        <div className="btn">
                             <button className='Discount'>Add Discount</button>
                             <div className='show-var' onClick={() => toggleShowVariants(index)}>
                               {showVariants[index] ? 'Hide variants' : 'Show variants'}&#9660;

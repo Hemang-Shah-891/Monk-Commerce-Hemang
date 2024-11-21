@@ -14,7 +14,7 @@
 
 .words{
     font-weight: 600;
-    margin-left: 150px;
+    margin-left: 330px;
     margin-bottom: 80px;
     font-size: larger;
 }
@@ -43,7 +43,7 @@
 }
 
 .button{
-    margin-left: 240px;
+    margin-left: 400px;
     border: 2px solid #008060;
     background-color: white;
     padding-top: 10px;
