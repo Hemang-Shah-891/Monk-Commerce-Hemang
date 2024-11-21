@@ -172,7 +172,7 @@ const AllProductsModal = ({submitSelected, closeModal}) => {
                                 />
                                 <span className='child-title'>{child.title}</span>
                                 <span className='child-price'>${child.price}</span>
-                                <span className='qty'>{child.inventory_quantity} available</span>
+                                <span className='qty'>{child.inventory_quantity ? child.inventory_quantity + "available" : ""} </span>
                                 
                             </label>
                             </div>

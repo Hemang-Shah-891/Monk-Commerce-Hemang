@@ -152,17 +152,6 @@
   padding-right: 10px;
 }
 
-.qty{
-  float: right;
-  margin-right: 10px;
-}
-
-
-.child-price{
-  float: right;
-  margin-right: 30px;
-  margin-left: 10px;
-}
 
 
 
@@ -192,8 +181,36 @@
   margin-left: 10px;
 }
 
+.label{
+  display: flex;
+}
+
+.child-price{
+  float: right;
+  margin-right: 30px;
+  margin-left: 10px;
+  /* width: 60%; */
+}
+
+.qty{
+  float: right;
+  margin-right: 10px;
+  /* width: 20%; */
+}
+
 .group-title{
   margin-left: 10px;
+  /* width: 20%; */
+}
+
+.show-var{
+  color: rgba(0,110,255,1);
+  text-decoration: underline;
+  margin-left:40px;
+}
+
+body{
+  cursor: pointer;
 }
 
 

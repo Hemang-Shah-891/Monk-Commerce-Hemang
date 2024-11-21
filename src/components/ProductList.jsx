@@ -75,8 +75,8 @@ const ProductList = () => {
                         </div>
                         <div>
                             <button className='Discount'>Add Discount</button>
-                            <div onClick={() => toggleShowVariants(index)}>
-                              {showVariants[index] ? 'Hide variants' : 'Show variants'}
+                            <div className='show-var' onClick={() => toggleShowVariants(index)}>
+                              {showVariants[index] ? 'Hide variants' : 'Show variants'}&#9660;
                             </div>
                         </div>
                     </div>
